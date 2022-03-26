@@ -1,0 +1,14 @@
+.author {
+    height: 60px;
+    margin-bottom: 60px;
+}
+
+.author__image {
+    width: 60px;
+    border-radius: 100%;
+    float: left;
+}
+
+.author__details {
+    padding-left: calc(60px + 20px);
+}

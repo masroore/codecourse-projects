@@ -1,0 +1,40 @@
+<?php
+
+namespace Chatty\Http\Middleware;
+
+use Closure;
+use Illuminate\Contracts\Auth\Guard;
+
+class RedirectIfAuthenticated
+{
+    /**
+     * The Guard implementation.
+     *
+     * @var Guard
+     */
+    protected $auth;
+
+    /**
+     * Create a new filter instance.
+     *
+     * @return void
+     */
+    public function __construct(Guard $auth)
+    {
+        $this->auth = $auth;
+    }
+
+    /**
+     * Handle an incoming request.
+     *
+     * @param \Illuminate\Http\Request $request
+     */
+    public function handle($request, Closure $next)
+    {
+        if ($this->auth->check()) {
+            return redirect()->route('home');
+        }
+
+        return $next($request);
+    }
+}

@@ -1,0 +1,13 @@
+.dlist {
+  margin-bottom: 20px;
+
+  &__title {
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+
+  &__body {
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+  }
+}

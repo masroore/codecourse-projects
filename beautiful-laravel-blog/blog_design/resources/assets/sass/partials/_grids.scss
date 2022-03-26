@@ -1,0 +1,22 @@
+.container {
+    @include container;
+    padding: 0 40px;
+}
+
+.content {
+    @include span(12 of 12);
+}
+
+.sidebar {
+    @include span(12);
+}
+
+@include susy-breakpoint(960px) {
+    .sidebar {
+        @include span(4 last);
+    }
+
+    .content {
+        @include span(8 of 12);
+    }
+}

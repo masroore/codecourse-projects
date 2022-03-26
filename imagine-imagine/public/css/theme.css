@@ -1,0 +1,28 @@
+body {
+    padding-top: 100px;
+    background-color: #edeff0;
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo a {
+    color: #d9d9d9;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 5px 5px 4px 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    font-size: inherit;
+}

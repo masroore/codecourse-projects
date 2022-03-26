@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  font: inherit;
+  font-weight: 800;
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  background-color: #eee;
+  box-shadow: 0 5px #d0d0d0;
+  transition: box-shadow 300ms;
+  text-decoration: none;
+
+  &:hover {
+    top: 2px;
+    position: relative;
+    box-shadow: 0 3px #d0d0d0;
+  }
+
+  &--yellow {
+    color: #fff;
+    background-color: #fad468;
+    box-shadow: 0 5px #f3bc65;
+
+    &:hover {
+      box-shadow: 0 3px #f3bc65;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.animate {
+  animation-duration: 1s;
+
+  &--grow {
+    animation-name: grow;
+    animation-duration: 300ms;
+  }
+
+  &--top-enter {
+    animation-name: topEnter;
+    animation-duration: 300ms;
+  }
+
+  &--top-leave {
+    animation-name: topLeave;
+    animation-duration: 300ms;
+  }
+}
+
+@keyframes grow {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1);
+  }
+}
+
+@keyframes topEnter {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes topLeave {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+}

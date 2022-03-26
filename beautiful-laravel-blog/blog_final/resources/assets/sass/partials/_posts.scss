@@ -1,0 +1,28 @@
+.post {
+    margin-bottom: 60px;
+}
+
+.post__header {
+    font-size: 1.4em;
+    font-weight: $font-weight-extra-bold;
+    color: $header-color;
+}
+
+.post__author {
+    font-size: .9em;
+    font-weight: $font-weight-normal;
+    margin-bottom: 30px;
+
+    a {
+        font-weight: $font-weight-normal;
+    }
+}
+
+.post__time {
+    margin-left: 10px;
+}
+
+.post__preview {
+    font-size: 1em;
+    font-weight: $font-weight-normal;
+}
